@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Playlist Catcher",
+  "version": "1.0",
+  "description": "This extension allows users to save playlist titles in case Playlist users remove or delete videos from your Playlists.",
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "*://*/*"
+  ]
+}
